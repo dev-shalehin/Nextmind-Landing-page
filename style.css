@@ -180,7 +180,21 @@ width: 100%;
     margin: 20px auto 0;
     color: var(--text-color);
 }
+.main-hero .top-section span{
+    display: inline-block;
+    padding: 30px;
+    background: var(--gradint);
+    background-size: 200px auto;
+    border-radius: 50%;
+    font-size: 30px;
+    margin: 50px 0;
+}
 
+.main-hero .top-section span .fa-arrow-right{
+    transform: rotate(-45deg);
+    transition: all .2s ease-in-out;
+    display: inline-block;
+}
 .main-hero .image-section{
     position: relative;
     width: 100%;
