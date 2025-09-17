@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 0;
+    cursor: none;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+body {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--default-font);
+    background: var(--bg-color);
+    color: var(--primary-color);
+}
+
+:root{
+    --primary-color:#FFFFFF;
+    --secondary-color:#FFFFFF0A;
+    --accent-color:#E24C4A;
+    --accent-secondary-color:#386BB7;
+    --bg-color:#000000;
+    --error-color:rgb(230, 87, 87);
+    --divider-color:#FFFFFF0F;
+    --dark-divider-color:#FFFFFF66;
+    --default-font:"Manrope", sans-serif;
+    --letter-spacing:0.2em;
+    --gradint:linear-gradient(to right, var(--accent-secondary-color)0%, var(--accent-color)50%, var(--accent-secondary-color)100%);
+}
+button{
+    /* background: linear-gradient(to right, var(--accent-secondary-color)0%, var(--accent-color)50%, var(--accent-secondary-color)100%); */
+    display: block;
+    background: var(--gradint);
+    background-size: 200px auto;
+    border-radius: 100px;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--primary-color);
+    padding: 1em 2em;
+    outline: none;
+    border: none;
+    transition: all .2s ease-in-out;
+}
+button:hover{
+    background-position: right center;
+}
+button .fa-arrow-right{
+    transform: rotate(-45deg);
+    transition: all .2s ease-in-out;
+    display: inline-block;
+}
+button:hover .fa-arrow-right{
+    transform: rotate(0deg);
+}
+.container{
+    width: 1300px;
+    margin: 0 auto;
+}
+.flex-start{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-around{
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+.main-header {
+    padding: 20px 0;
+    border-bottom: 2px solid var(--divider-color);
+}
+.main-header .main-logo{
+    width: 11%;
+}
+
+.main-header .main-logo .logo img{
+width: 100%;
+}
+
+.main-header .catagory{
+    width: 76%;
+}
+.main-header .catagory .catagory-list li{
+    list-style: none;
+    margin-left: 20px;
+}
+.main-header .catagory .catagory-list li a{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+.main-header .button{
+    width: 13%;
+}
